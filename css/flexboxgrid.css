@@ -522,7 +522,11 @@
     flex-basis: 33.333%;
     max-width: 30.333%;
   }
-
+  .col-mdd-4 {
+    -ms-flex-preferred-size: 33.333%;
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+  }
   .col-md-5 {
     -ms-flex-preferred-size: 41.667%;
     flex-basis: 41.667%;
