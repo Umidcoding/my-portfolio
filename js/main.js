@@ -16,8 +16,14 @@ var typed = new Typed('.hero__typer', {
 });
 
 var typed = new Typed('.typer', {
-  strings:['Frontend Developer','Web Design'],
+  strings:['Web Developer','Web Design'],
   typeSpeed:30,
   backSpeed:30,
   loop:true
 });
+
+const cursor = document.querySelector(".cursor")
+
+document.addEventListener('mousemove', e => {
+  cursor.setAttribute("style", "top: "+e.pageY+"px; left: "+e.pageX+"px;")
+})

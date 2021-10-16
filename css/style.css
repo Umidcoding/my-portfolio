@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@700&display=swap');
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -53,7 +54,7 @@ button {
   display: flex;
 }
 .content{
-  background-image: url("../img/banner\ —\ копия.jpg");
+  background-image: url("../img/imgggg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -109,6 +110,7 @@ main{
   margin-bottom: 80px;
   display: flex;
   flex-direction: column; 
+  position: relative;
 }
 .site-header__btn {
   border: none;
@@ -130,14 +132,28 @@ main{
   width: 120px;
   height: 43px;
 }
+.logooo {
+  font-family: 'Georama', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+.dood {
+  width: 20px;
+  height: 20px;
+  color: var(--btn-color);
+}
 .site-header__name {
   color: var(--text-color);
   top: 80px;
   text-align: center;
   font-size: 12px;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   padding-left: 10px;
   line-height: 2.75rem;
+  position: absolute;
+  top: 110px;
+  left: -30px;
 }
 .nav {
   padding-bottom: 30px;
@@ -318,6 +334,11 @@ main{
 @media screen and (min-width: 320px) {
     .hero__title {
       font-size: 35px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .hero__title {
+      font-size: 55px;
     }
 }
 /* hero end */
@@ -781,6 +802,7 @@ main{
   .project__img {
     position: absolute;
     object-fit: cover;
+    border-radius: 4px;
   }
   .project__inner {
     position: absolute;
@@ -794,7 +816,7 @@ main{
     height: 80px;
     z-index: 5;
     opacity: 0;
-    transition: opacity 0.9s ease, transform 0.9s ease;
+    transition: opacity 0.4s ease, transform 0.4s ease;
   }
   .project__inner-item {
     margin-left: 10px;
@@ -842,13 +864,13 @@ main{
     display: block;
     opacity: 0;
     transform: translateX(400px);
-    background-color: var(--btn-color);
+    background-color: #000;
     z-index: 0;
-    transition: all 0.9s ease;
+    transition: all 0.4s ease;
   }
   .project__item:hover:after {
     transform: translateX(0);
-    opacity: 1;
+    opacity: 0.8;
   }
 }
 /* portfolio end */
@@ -940,6 +962,11 @@ main{
   margin-left: 10px;
 }
 }
+@media screen and (min-width: 320px) {
+    #news {
+      padding-bottom: 90px;
+    }
+}
 @media screen and (min-width: 992px) {
     .news-inner__img {
       width: 337px;
@@ -954,4 +981,184 @@ main{
     .news-inner__title::after {
       width: 297px;
     }
+}
+
+/* news end */
+
+@media screen and (min-width: 320px) {
+    #contact {
+      background-color: #000;
+    }
+    .contact__title {
+      font-family: var(--font-oswavl);
+      font-size: 34px;
+      color: var(--text-color);
+      display: flex;
+      align-items: center;
+      letter-spacing: 1.5px;
+      padding-top: 90px;
+      padding-bottom: 30px;
+    }
+    .contact__title::before {
+      content: "";
+      width: 10px;
+      height: 32px;
+      display: inline-block;
+      background-color: var(--btn-color);
+      margin-top: 3px;
+      margin-right: 10px;
+    }
+    .contact__touch {
+      background-color: #0C0C0C;
+      padding-bottom: 30px;
+      margin-bottom: 50px;
+    }
+    .contact__touch-title {
+      font-family: var(--font-oswavl);
+      font-size: 20px;
+      line-height: 1.75rem;
+      padding-bottom: 15px;
+      padding-top: 30px;
+      padding-left: 30px;
+      color: var(--text-color);
+    }
+    .contact__touch-text {
+      font-size: 15px;
+      color: #bbb;
+      line-height: 26px;
+      width: 230px;
+      padding-left: 30px;
+      padding-bottom: 20px;
+    }
+    .contact__touch-item {
+      margin-bottom: 5px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-left: 29px;
+    }
+    .contact__touch-item:hover .contact__touch-link {
+      color: var(--btn-color);
+    }
+    .contact__touch-item:hover .contact__touch-span{
+      background-color: #000;
+      border-color: var(--btn-color);
+    }
+    .contact__touch-item:hover .contatc__touch-spann{
+      background-color: #000;
+      border-color: var(--btn-color);
+    }
+    .contact__touch-span {
+      width: 35px;
+      height: 35px;
+      display: inline-block;
+      background-color: var(--btn-color);
+      border: 1px solid transparent;
+      transition: all 0.4s ease;
+    }
+    .contact__icon {
+      width: 15px;
+      height: 15px;
+      color: var(--text-color);
+      margin-top: 9px;
+      margin-left: 9px;
+    }
+    .contatc__touch-spann {
+      width: 35px;
+      height: 35px;
+      display: inline-block;
+      background-color: var(--btn-color);
+      border: 1px solid transparent;
+      transition: all 0.4s ease;
+    }
+    .contact__touch-link {
+      font-size: 15px;
+      color: #bbb;
+      display: inline-block;
+      margin-left: 8px;
+      transition: color 0.3s ease;
+    }
+    .contact__touch-item:hover .contact__touch-addres {
+      color: var(--btn-color);
+    }
+    .contact__touch-addres {
+      font-style: normal;
+      font-size: 15px;
+      color: #bbb;
+      margin-left: 8px;
+      transition: color 0.3s ease;
+    }
+    .contact__form-group {
+    }
+    .contact__input {
+    color: #555;
+    background: #000000;
+    width: 100%;
+    min-height: 45px;
+    padding: 0 40px 0 10px;
+    font-size: 16px;
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 29px;
+    border: none;
+    border: 1px solid #141414;
+    text-shadow: none;
+    }
+    .contact__area {
+    color: #555;
+    background: #000000;
+    width: 100%;
+    height: 120px;
+    padding: 10px 0 0 10px;
+    font-size: 16px;
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 29px;
+    border: none;
+    border: 1px solid #141414;
+    text-shadow: none;
+    resize: none;
+    }
+    .contact__btns {
+      padding-bottom: 100px;
+    }
+    .contact__btn {
+      padding: 13px 15px;
+      font-weight: 600;
+      border: 2px solid transparent;
+      color: var(--text-color);
+      background-color: var(--btn-color);
+      transition: all 0.4s ease;
+    }
+    .contact__btn:hover {
+      background-color: transparent;
+      border-color: var(--btn-color);
+      color: var(--btn-color)
+    }
+}
+@media screen and (min-width: 992px) {
+  .contact__touch {
+    padding-bottom: 42px;
+  }
+  .contact__touch-text {
+    width: 460px;
+  }
+  .contact__btns {
+    padding-bottom: 0;
+  }
+}
+
+/* contact end */
+
+footer {
+  background-color: #0C0C0C;
+  border-left: 2px solid #000;
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 992px) {
+  .footer__subtext {
+    font-size: 15px;
+    color: #bbb;
+  }
 }

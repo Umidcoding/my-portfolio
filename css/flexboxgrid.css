@@ -538,7 +538,11 @@
     flex-basis: 50%;
     max-width: 50%;
   }
-
+  .col-mdd-6 {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 45%;
+  }
   .col-md-7 {
     -ms-flex-preferred-size: 58.333%;
     flex-basis: 58.333%;
