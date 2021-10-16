@@ -1162,3 +1162,24 @@ footer {
     color: #bbb;
   }
 }
+
+.up {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 40px;
+  bottom: 10px;
+  border: 2px solid var(--btn-color);
+  background-color: #000;
+  transition: background 0.4s ease;
+}
+.up:hover {
+  background-color: var(--btn-color);
+}
+.upp {
+  color: var(--text-color);
+  font-size: 25px;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
